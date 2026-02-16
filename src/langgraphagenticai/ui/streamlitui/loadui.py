@@ -120,10 +120,10 @@ class LoadStreamlitUI:
         # Custom header
         st.markdown("""
         <div class="main-header">
-            <h1 style="font-size: 3rem; margin: 0; font-weight: 700;">AI News Hub</h1>
+            <h1 style="font-size: 2.5rem; margin: 0; font-weight: 700;">Conversational AI Agent</h1>
         </div>
         <div class="main-subtitle">
-            <p>Your Intelligent AI-Powered News Aggregator & Assistant</p>
+            <p>With Real-Time Web Search & News Summarization</p>
         </div>
         """, unsafe_allow_html=True)
 
