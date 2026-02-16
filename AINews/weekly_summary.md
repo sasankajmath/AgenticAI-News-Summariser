@@ -1,52 +1,97 @@
 # Weekly AI News Summary
 
 <think>
-Okay, let's start by looking at the user's query. They want me to summarize AI news articles into markdown format with specific elements. The system prompt gives clear instructions: include the date in IST in YYYY-MM-DD format, concise summaries sorted by latest first, and source URLs as links. 
+Okay, let's see. The user wants me to summarize these AI news articles into markdown format. Each entry needs the date in IST, a concise summary, sorted by latest first, and the source URL as a link.
 
-First, I need to go through each of the provided articles and extract the necessary information. The user provided a list of articles with content, URLs, and dates. However, some articles might not be relevant to AI, so I should filter those out. For example, the article about Delhi CM and another about Anthropic's workforce expansion are relevant, but others might be about non-AI topics or duplicates.
+First, I need to parse all the provided articles. There's a lot here, so I'll go through each one to extract the key information. Let me start with the first article. The date is given as Thu, 27 Nov 2025 06:49:30 GMT. I need to convert that to IST. GMT is UTC, and IST is UTC+5:30, so adding 5 hours and 30 minutes. 06:49 GMT plus 5h30m would be 12:19 IST. Wait, but the article mentions Nov 26 in the content. Wait, the date in the content is New Delhi, Nov 26 (IANS)... but the actual date in the metadata is Thu, 27 Nov 2025. Hmm, maybe there's a time zone difference. Since the user wants the date in IST, which is UTC+5:30, and the article's date is in GMT (UTC), adding 5h30m. So Thu, 27 Nov 2025 06:49 GMT becomes Thu, 27 Nov 2025 12:19 IST, so the date would still be 2025-11-27. The content mentions Nov 26, but that might be the local date in New Delhi. However, the user specified to use the article's date. Wait, the URL's date is Thu, 27 Nov 2025. So the correct date is 2025-11-27 IST. The summary should be about the OncoMark AI framework developed by Indian scientists for personalized cancer therapy.
 
-Next, I'll convert the dates from the given formats (like "Mon, 29 Sep 2025 13:47:38 GMT") to IST. Since IST is UTC+5:30, I need to adjust the GMT dates accordingly. For example, 13:47 GMT would be 19:17 IST on the same day. But since the user wants the date in YYYY-MM-DD format, I just need the date part, not the time. So a date like "Mon, 29 Sep 2025" becomes "2025-09-29".
+Next article from Pune, India - November 27, 2025. The date is Thu, 27 Nov 2025 13:16:29 GMT. Converting to IST: 13:16 +5:30 is 18:46, so the date remains 2025-11-27. Summary points about the exactitude report on AI in agriculture market, growth drivers, and some links. Need to mention the market growth and the companies involved like Microsoft Azure FarmBeats.
 
-Then, I'll craft concise summaries for each article. The summaries need to capture the key points without being too detailed. For example, an article about AI-driven innovations in agriculture should mention the 20% yield increase and the technologies involved. I need to ensure that each summary is a single sentence or two, as per the user's request.
+Third article: NTT DATA reskilling workforce for AI-native development. Date is Tue, 02 Dec 2025 08:06:25 GMT. IST conversion is 13:36, date 2025-12-02.
 
-After that, I need to sort the articles by date in descending order, starting with the latest. The latest date provided is 04 Oct 2025, so that should be the first entry. I'll check each date to ensure correct ordering.
+Fourth article from New Delhi, same as the first one, but the date is Mon, 01 Dec 2025 01:28:18 GMT. Converting to IST: 01:28 +5:30 = 07:28, date becomes 2025-12-01. The content is similar to the first article but maybe a different source. Need to check if it's a duplicate. Since the URL is different, maybe it's another source covering the same event. So include it as a separate entry.
 
-I should also verify the URLs to make sure they are valid and correctly linked. Some URLs might be broken or not directly related to AI, so I'll need to cross-check the content snippets to confirm relevance.
+Fifth article: Canada startup news about bug detection. Date is Wed, 03 Dec 2025 06:07:44 GMT. IST conversion is 11:37, date 2025-12-03.
 
-One challenge is dealing with articles that have multiple dates or ambiguous information. For example, an article titled "Tech News Tsunami (Sept 30–Oct 1, 2025)" might need the date adjusted to 2025-10-01 since it covers up to the 1st. Also, some articles might have dates in different time zones, so converting to IST is crucial, but since the user only wants the date part, the time conversion might not affect the date itself unless the original date crosses over to the next day when converted to IST.
+Then another Canada article about Justin Lin directing a movie. Date is same as previous, Wed, 03 Dec 2025 06:07:05 GMT. IST is 11:37, same date. Content seems unrelated to AI, maybe a mistake. The user's instruction says to summarize AI news articles, so this one might be irrelevant. Need to check.
 
-Another thing to watch for is duplicate entries. Sometimes the same event might be covered in multiple articles, so I need to ensure each entry is unique. For example, the article about Anthropic tripling its workforce is mentioned once, so I don't need to include duplicates.
+Next article: China's tech giants taking AI model training offshore. Date Thu, 27 Nov 2025 06:07:50 GMT. IST is 11:37, date 2025-11-27. Summary about offshore training to use Nvidia chips.
 
-Finally, I'll structure the markdown with the specified headers and bullet points. Each date will be a header followed by a bullet point with the summary and the URL. I'll double-check the formatting to ensure correctness, like using triple ### for the date headers and proper linking syntax.
+Then an article from Farmonaut on AI in agriculture. Date is Wed, 03 Dec 2025 06:37:39 GMT. IST is 12:07, date 2025-12-03. Talks about AI revolutionizing farming.
 
-Wait, the user specified the format as ### [Date], so I need to use markdown headers for dates. Also, ensure that the dates are in the correct format and sorted properly. Let me list all the dates first to organize them correctly.
+Apple's AI chief stepping down. Date Mon, 01 Dec 2025 22:24:23 GMT. IST is 03:54 next day, so 2025-12-02.
 
-After compiling all the entries, I'll review the final markdown to make sure all requirements are met: correct date formatting, concise summaries, proper sorting, and valid links. This should give the user a clear, organized summary of the AI news articles as requested.
+Cyber startup Frenetik launches with deception tech. Date Tue, 02 Dec 2025 07:35:03 GMT. IST is 13:05, date 2025-12-02.
+
+AI-powered cybersecurity article. Date Sat, 29 Nov 2025 06:49:06 GMT. IST is 12:19, date 2025-11-29. Talks about the AI arms race in cybersecurity.
+
+Cybersecurity M&A roundup. Date Mon, 01 Dec 2025 13:00:00 GMT. IST is 18:30, date 2025-12-01. Acquisitions strengthening AI security.
+
+Opinion piece on AI causing layoffs. Date Mon, 01 Dec 2025 07:00:00 GMT. IST is 12:30, date 2025-12-01. Discusses role redefinition due to AI.
+
+Canadian donor turning Negev into AI capital. Date Tue, 02 Dec 2025 18:18:26 GMT. IST is 23:48, date 2025-12-02. About building an AI center.
+
+Wingtech court case. Date Mon, 01 Dec 2025 08:03:00 GMT. IST is 13:33, date 2025-12-01. Legal battle over Nexperia.
+
+AI industry civil war article. Date Wed, 26 Nov 2025 20:30:12 GMT. IST is 01:00, date 2025-11-27. Political and regulatory issues in the US.
+
+China using AI for censorship. Date Mon, 01 Dec 2025 10:00:14 GMT. IST is 15:30, date 2025-12-01. Surveillance and censorship expansion.
+
+HSBC adopts Mistral AI. Date Mon, 01 Dec 2025 09:40:00 GMT. IST is 15:10, date 2025-12-01. Banking AI integration.
+
+Qiantang District AI in pharmaceuticals. Date Fri, 28 Nov 2025 09:33:30 GMT. IST is 15:03, date 2025-11-28. AI for drug development.
+
+Now, I need to sort all these by date, latest first. Let's list the dates in IST format:
+
+2025-12-03: Canada startup (bug detection) and Farmonaut's article.
+
+2025-12-02: NTT DATA, Apple's AI chief, Canadian donor, Wingtech.
+
+2025-12-01: Cybersecurity M&A, China's censorship, HSBC, Qiantang, Apple AI, AI Cybersecurity article, Opinion on layoffs.
+
+2025-11-27: OncoMark, Global AI in Agriculture, China offshore AI training.
+
+2025-11-28: Qiantang District article.
+
+2025-11-26: The initial article's content mentions Nov 26, but the actual date in metadata is 27th, so maybe that's a discrepancy. Need to use the provided date.
+
+Now, compiling all these into markdown. Need to check for duplicates. For example, the OncoMark framework appears in multiple articles with same date but different URLs. Need to include each as separate entries if they are distinct sources.
+
+Also, need to ensure the summaries are concise and capture the main points. For example, the first article is about the OncoMark AI predicting cancer behavior. The fourth article is similar but different source. Need to mention both with distinct URLs.
+
+For the agriculture reports, the Exactitude article and Farmonaut's are different sources but same topic. Include both.
+
+Check if the Canada startup article about Justin Lin is relevant. The content mentions a movie, which isn't AI-related. Probably a mistake, so exclude it.
+
+Now, structure the markdown with dates sorted from latest to earliest. Each date has bullet points with summary and link.
 </think>
 
-### [2025-10-04]  
-- [Tech privacy battles and AI misuse dominate global discussions, including UK backdoor demands and India’s AI-driven legal pushback](https://ts2.tech/en/ai-bubble-alarms-pixel-10-launch-beer-shortages-tech-news-roundup-oct-3-4-2025/)  
+### [2025-12-03]
+- [Canadian startups aim to revolutionize bug detection for developers](https://www.startupecosystem.ca/news/start-ups-aim-to-revolutionize-bug-detection-for-vibe-coders/)  
+- [AI-powered farming innovations reshape global agriculture through precision and analytics](https://farmonaut.com/news/agriculture-technology-ai-news-october-2025-today)  
 
-### [2025-10-02]  
-- [Google introduces AI-enhanced "AI Mode" for conversational shopping, integrating visual search and product comparisons](https://chainstoreage.com/google-launches-ai-enabled-conversational-shopping)  
+### [2025-12-02]
+- [NTT DATA reskilling India's workforce for AI-native development to strengthen Global Capability Centres](https://www.hrkatha.com/news/ntt-data-to-reskill-entire-india-workforce-for-ai-native-development/)  
+- [Apple's AI chief steps down amid competition in AI advancement](https://www.cnbc.com/2025/12/01/apple-ai.html)  
+- [Canadian donor transforms Israel's Negev into global AI research hub](https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-878946)  
+- [Wingtech seeks court intervention to regain control of Nexperia in Dutch legal battle](https://www.autonews.com/manufacturing/suppliers/ane-wingtech-nexperia-dutch-court-decision-1201/)  
 
-### [2025-10-01]  
-- [Amazon and NASA highlighted in explosive tech news: AI democratization, space commercialization, and enterprise AI deals](https://ts2.tech/en/tech-news-tsunami-sept-30-oct-1-2025-amazons-alexa-nasa-radar-images-ai-deals-and-more/)  
+### [2025-12-01]
+- [Global AI in agriculture market to reach $10.3B by 2034, driven by smart farming tech](https://www.openpr.com/news/4291739/ai-in-agriculture-market-to-surpass-usd-10-3-billion-by-2034)  
+- [Cybersecurity firms boost AI-driven threat detection through acquisitions and M&A](https://www.infosecurity-magazine.com/news/cyber-deals-november-2025/)  
+- [China expands AI-based surveillance and censorship in criminal justice systems](https://www.washingtonpost.com/world/2025/12/01/china-ai-censorship-surveillance/)  
+- [HSBC adopts Mistral AI models to enhance financial services and fraud detection](https://www.finextra.com/newsarticle/46986/hsbc-to-adopt-mistral-ai-foundational-models-across-the-bank)  
+- [AI reshapes job roles: 30-45% of tech jobs redefined globally, new roles emerge](https://www.ynetnews.com/opinions-analysis/article/ryb000l51111l)  
+- [New AI framework OncoMark visualizes cancer hallmarks for personalized therapies](https://www.thehansindia.com/hans/young-hans/scientists-tap-ai-for-personalised-cancer-therapy-1027568)  
+- [AI-powered cybersecurity tools combat rising threats through deception and automation](https://www.csoonline.com/article/4099288/cyber-startup-frenetik-launches-with-patented-deception-technology-that-bets-against-the-ai-arms-race.html)  
 
-### [2025-09-30]  
-- [AI-driven agriculture innovations in India could boost crop yields by 20%, using precision farming and satellite tech](https://farmonaut.com/asia/agricultural-ai-news-top-7-agriculture-innovations-india)  
-- [Anthropic to triple international workforce as demand for Claude AI models surges outside the US](https://hr.economictimes.indiatimes.com/amp/news/industry/anthropic-to-triple-international-workforce-as-ai-models-drive-growth-outside-us/124192446)  
-- [Paraguay to build largest AI infrastructure in Latin America using hydroelectric-powered data centers](https://developingtelecoms.com/telecom-technology/energy-sustainability/19136-planned-paraguay-data-centre-will-use-hydroelectric-power.html)  
-- [FinTech AI adoption rises, with startups like Varo Bank hiring AI leaders and expanding automation](https://www.fintechfutures.com/ai-in-fintech/september-2025-top-five-ai-stories-of-the-month)  
+### [2025-11-28]
+- [China's Qiantang District leverages AI for pharmaceutical innovation in drug development](https://www.manilatimes.net/2025/11/28/tmt-newswire/globenewswire/chinese-smart-manufacturing-hub-qiantang-district-leverages-ai-to-drive-pharmaceutical-innovation/2233123)  
 
-### [2025-09-29]  
-- [Global tech giants like TCS and Accenture cut thousands of jobs amid rapid AI-driven workplace transformation](https://www.thehansindia.com/technology/tech-news/ai-wave-reshapes-workforce-tcs-accenture-and-global-tech-giants-slash-thousands-of-jobs-1010624)  
-- [Nvidia’s Blackwell AI infrastructure powers India’s AI-powered Industry 4.0 automation via Tech Mahindra](https://www.rcrwireless.com/20250929/fundamentals/ai-sharp-end-enterprise)  
-- [Healthcare AI readiness emphasizes strategic problem selection and risk management, per HIMSS](https://www.mobihealthnews.com/video/what-leaders-need-focus-ai-readiness)  
+### [2025-11-27]
+- [India's OncoMark AI framework predicts cancer behavior for personalized treatment](https://indianews.com.au/indian-scientists-tap-ai-for-personalised-cancer-therapy/)  
+- [Global AI in agriculture market to surge by 2030 due to smart farming and AI adoption](https://www.openpr.com/news/4291739/ai-in-agriculture-market-to-surpass-usd-10-3-billion-by-2034)  
+- [China's tech giants relocate AI model training offshore to access Nvidia chips](https://www.startupecosystem.ca/news/chinas-tech-giants-take-ai-model-training-offshore-to-tap-nvidia-chips/)  
 
-### [2025-09-28]  
-- [HSBC and IBM demonstrate quantum computing’s 34% boost in bond-trading algorithms](https://ts2.tech/en/billion-dollar-ai-bets-and-biotech-breakthroughs-top-tech-news-sept-27-28-2025/)  
-- [Small business AI tools expand: Google Chrome and Microsoft Teams add Gemini/CoPilot features](https://www.forbes.com/sites/quickerbettertech/2025/09/28/this-week-in-small-business-technology-news-google-microsoft-add-new-ai-features-to-chrome-and-teams/)  
-
-### [2025-09-27]  
-- [Meta, OpenAI, and Oracle collaborate via Stargate to target the $4 trillion global AI industry](https://asia.nikkei.com/business/technology/tech-asia/are-ai-glasses-the-next-smartphone-race-between-the-us-and-china)
+### [2025-11-26]
+- [AI industry political tensions emerge in Washington D.C. over regulation and alliances](https://gizmodo.com/theres-an-ai-industry-civil-war-brewing-in-d-c-2000692245)
