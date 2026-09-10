@@ -87,7 +87,9 @@ class AINewsNode:
         os.makedirs("./AINews", exist_ok=True)
 
         filename = f"./AINews/{frequency}_summary.md"
-        with open(filename, 'w') as f:
+        # Always use UTF-8 because LLM output commonly contains Unicode
+        # punctuation such as non-breaking hyphens (U+2011).
+        with open(filename, 'w', encoding='utf-8', newline='\n') as f:
             f.write(f"# {frequency.capitalize()} AI News Summary\n\n")
             f.write(summary)
         self.state['filename'] = filename

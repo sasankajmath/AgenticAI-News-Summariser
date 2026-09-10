@@ -49,7 +49,7 @@ class DisplayResultStreamlit:
                 try:
                     # Read the markdown file
                     AI_NEWS_PATH = f"./AINews/{frequency.lower()}_summary.md"
-                    with open(AI_NEWS_PATH, "r") as file:
+                    with open(AI_NEWS_PATH, "r", encoding="utf-8") as file:
                         markdown_content = file.read()
 
                     # Display the markdown content in Streamlit

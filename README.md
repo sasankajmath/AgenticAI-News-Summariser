@@ -94,10 +94,10 @@ In the Streamlit sidebar:
 1. Enter your Groq API key
 2. Enter your Tavily API key
 3. Select a Groq model (options include):
-   - `qwen/qwen3-32b`
-   - `gemma2-9b-it`
-   - `deepseek-r1-distill-llama-70b`
-   - `llama-3.3-70b-versatile`
+   - `openai/gpt-oss-20b`
+   - `openai/gpt-oss-120b`
+   - `qwen/qwen3.6-27b`
+   - `qwen/qwen3.8-27b`
 4. Choose a use case:
    - **Basic Chatbot** - Simple conversation
    - **Chatbot With Web** - Chat with web search
